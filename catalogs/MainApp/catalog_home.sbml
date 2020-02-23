@@ -1,0 +1,11 @@
+=begin catalog
+
+=object web: id=web, url="https://media.daum.net", uses-browser-user-agent=yes, \
+            content-script@start=block_replies.js, \
+            action-when-failed=subview, params-when-failed="subview=V_ERROR,target=self", \
+            style=web
+
+=object blank: style=blank_top
+=object progress: type=loading, owner=web, style=progress_web
+
+=end catalog

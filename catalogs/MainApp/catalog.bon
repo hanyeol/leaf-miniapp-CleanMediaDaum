@@ -1,0 +1,42 @@
+{
+    "default-subview":"V_HOME",
+    "title":"Simple WebApp",
+    "version":"1.0",
+    "subviews":{
+    	"V_HOME":{
+    		"catalog":"MainApp",
+    		"subcatalog":"home",
+    		"type":"store"
+    	},
+		"V_ERROR":{
+    		"catalog":"MainApp",
+    		"subcatalog":"error",
+    		"type":"store"
+    	},
+		"V_PASSCODE":{
+    		"catalog":"MainApp",
+    		"subcatalog":"passcode",
+    		"type":"passcode"
+    	}
+	},
+	"subcatalogs":{
+		"home":{
+    		"controller":"StoreView",
+	    	"hides-navibar":"yes",
+    		"statusbar-style":"Default",
+    		"title":"홈"
+		},
+		"error":{
+    		"controller":"StoreView",
+	    	"hides-navibar":"yes",
+    		"statusbar-style":"Default",
+    		"title":"에러"
+		},
+		"passcode":{
+    		"controller":"PasscodeView",
+	    	"hides-navibar":"yes",
+    		"statusbar-style":"Default",
+    		"title":"에러"
+		}
+	}
+}
