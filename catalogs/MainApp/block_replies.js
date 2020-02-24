@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var hiding_replies_style = document.createElement('style');
 
     hiding_replies_style.innerHTML = `
-        div .android,
-        div .iphone,
+        .cmt_view,
         .btn_cmt,
         .txt_cmt,
         .box_cmtrank,
