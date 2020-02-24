@@ -1,7 +1,7 @@
 =begin catalog
 
 =object web: id=web, url="https://media.daum.net", uses-browser-user-agent=yes, \
-            content-script@start=block_replies.js, \
+            content-script@start=block_replies.js, reloads-when-pull=yes, \
             action-when-failed=subview, params-when-failed="subview=V_ERROR,target=self", \
             style=web
 
