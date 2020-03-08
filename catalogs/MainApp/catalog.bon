@@ -1,8 +1,8 @@
 {
-    "default-subview":"V_HOME",
     "title":"MainApp 카탈로그",
-    "orientations":"portrait,landscape",
     "version":"1.0",
+    "orientations":"portrait,landscape",
+    "default-subview":"V_HOME",
     "subviews":{
         "V_HOME":{
             "catalog":"MainApp",
