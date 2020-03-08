@@ -1,6 +1,6 @@
 {
     "default-subview":"V_HOME",
-    "title":"Simple WebApp",
+    "title":"MainApp 카탈로그",
     "orientations":"portrait,landscape",
     "version":"1.0",
     "subviews":{
