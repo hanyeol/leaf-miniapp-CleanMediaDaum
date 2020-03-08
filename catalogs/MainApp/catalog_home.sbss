@@ -1,12 +1,34 @@
 import themes.sbss
 
 #web: width=1pw, height=1ph-(1sbh+3dp), position=abs, gravity=top, y=1sbh+3dp, \
-        edge-swipe-enabled=yes, handles-back-key=yes
+        autoresizing=flexible-size, edge-swipe-enabled=yes, handles-back-key=yes
 
 #blank_top: color=$THEME_COLOR_MAIN, width=1pw, height=1sbh+3dp, \
         position=abs, gravity=top
-
 #progress_web: progress-color=$COLOR_WHITE, track-color=$THEME_COLOR_MAIN, \
         width=1pw, height=2dp, position=abs, gravity=top, y=1sbh, hidden=yes
 
+#section_error: width=1pw, height=1ph, position=abs, gravity=center, \
+        content-background-color=$THEME_COLOR_BACKGROUND
+
+#effect_error: width=280dp, height=280dp, position=abs, gravity=center
+
+#btn_reload: width=220dp, height=44dp, position=abs, gravity=bottom, \
+        label-font-family=$SANS_KR_MEDIUM, label-font-size=1.2, \
+        label-color=$COLOR_WHITE, highlight-label-color=$COLOR_LIGHT_GRAY, \
+        content-border-radius=2dp, content-background-color=$THEME_COLOR_ERROR
+
 /catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
+/catalog/error: display=none
+/catalog/error/message: display=block, position=abs, gravity=center, \
+        font-family=$SANS_KR_REGULAR, font-size=1.1, text-align=center
+
+if $ORIENTATION == "portrait"
+    #effect_error: y=-120dp
+    #btn_reload: y=-(1eb+100dp)
+    /catalog/error/message: y=10dp
+else
+    #effect_error: y=-60dp
+    #btn_reload: y=-(1eb+40dp)
+    /catalog/error/message: y=60dp
+end

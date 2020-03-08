@@ -1,11 +1,22 @@
-=begin catalog
+=begin catalog: script-when-loaded=on_loaded
 
-=object web: id=web, url="https://media.daum.net", uses-browser-user-agent=yes, \
-            content-script@start=block_replies.js, reloads-when-pull=yes, \
-            action-when-failed=subview, params-when-failed="subview=V_ERROR,target=self", \
-            style=web
+=object web: id=web, reuse-id=web, url="https://media.daum.net", uses-browser-user-agent=yes, \
+            content-script@start=cleanup_contents.js, \
+            script-when-start=on_web_start, script-when-failed=on_web_failed, \
+            reloads-when-pull=yes, hidden=yes, style=web
 
 =object blank: style=blank_top
 =object progress: type=loading, owner=web, style=progress_web
+
+=object section: id=section.error, section=error, hidden=yes, style=section_error
+=begin error: id=error
+=object effect: filename="error.json", style=effect_error
+
+=begin message
+웹페이지에 연결할 수 없습니다.
+=end message
+
+=object button: script=reload, label="다시 시도하기", style=btn_reload
+=end error
 
 =end catalog

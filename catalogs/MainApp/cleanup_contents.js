@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var hiding_replies_style = document.createElement('style');
+    var cleanup_contents_style = document.createElement('style');
 
-    hiding_replies_style.innerHTML = `
+    cleanup_contents_style.innerHTML = `
         .cmt_view,
         .btn_cmt,
         .txt_cmt,
@@ -25,5 +25,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
 
-    document.head.appendChild(hiding_replies_style);
+    document.head.appendChild(cleanup_contents_style);
 })
