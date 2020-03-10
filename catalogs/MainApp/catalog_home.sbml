@@ -19,4 +19,6 @@
 =object button: script=reload, label="다시 시도하기", style=btn_reload
 =end error
 
+=object effect: id=effect.loading, filename="loading.json", hidden=yes, style=effect_loading
+
 =end catalog

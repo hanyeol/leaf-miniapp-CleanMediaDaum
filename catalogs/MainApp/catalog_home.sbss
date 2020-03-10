@@ -18,6 +18,8 @@ import themes.sbss
         label-color=$COLOR_WHITE, highlight-label-color=$COLOR_LIGHT_GRAY, \
         content-border-radius=2dp, content-background-color=$THEME_COLOR_ERROR
 
+#effect_loading: width=120dp, height=120dp, position=abs, gravity=center
+
 /catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
 /catalog/error: display=none
 /catalog/error/message: display=block, position=abs, gravity=center, \
