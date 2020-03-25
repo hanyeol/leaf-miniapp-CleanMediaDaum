@@ -20,7 +20,7 @@ import themes.sbss
 
 #effect_loading: width=120dp, height=120dp, position=abs, gravity=center
 
-/catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
+/catalog:  fits-to-page=yes, page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
 /catalog/error: display=none
 /catalog/error/message: display=block, position=abs, gravity=center, \
         font-family=$SANS_KR_REGULAR, font-size=1.1, text-align=center
